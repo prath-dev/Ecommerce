@@ -1,0 +1,352 @@
+.header {
+  background:#2c2929 ;
+  width: 100% ;
+  height :60px;
+  z-index: 1;
+  box-shadow: 0px 0px 10px #c3d2ff;
+}
+.main {
+  height: 100%;
+  margin-top: 60px;
+  padding: 10px 50px;
+}
+#sidebarMenu {
+  height: 45rem;
+  position: fixed;
+  left: 0;
+  top: 2;
+  width: 260px;
+ /* transform: translateX(-250px);*/
+  transition: transform 250ms ease-in-out;
+line-height: 1.4rem;
+background-color: white;
+z-index: 10;
+box-shadow: 0px 0px 10px #c3d2ff;
+}
+.menu{
+list-style: none; 
+  margin:0;
+  padding:0;
+}
+.menu li{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.menu li a{
+  color: #fff;
+  display: block;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+#openSidebarMenu:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+input#openSidebarMenu{
+  display: none;
+}
+.sidebarIconToggle {
+height: 22px;
+
+  width: 22px;
+  position: fixed;
+  z-index: 99;
+  top: 22px;
+  left: 15px;
+  transition: all 0.3s;
+  cursor: pointer; 
+  color: black;
+}
+.spinner {
+  height: 3px;
+  background-color:black;
+  transition: all 0.3s;
+}
+.spinner.middle ,
+.spinner.bottom{
+  margin-top: 3px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+  opacity: 0;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+  transform: rotate(-135deg);
+  margin-top: -9px;
+
+}
+.card-container {
+  display : flex ;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 16rem;
+   
+}
+   
+.filter-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: black;
+  font-weight: 550;
+}
+
+.Filters {
+  text-align: center;
+  padding: 1rem;
+  padding-left: 3rem;
+}
+
+.filter-input {
+  display: block;
+  font-style: italic;
+  padding: 0.4rem;
+color : #212121;;
+font-size: 18px;
+}
+h3  {
+  color :  black;
+}
+.cards {
+ display: flex;
+   width: 100%;
+   max-width: 14rem;
+  border-radius: 10px;
+line-height: 1rem;
+    box-shadow: 0px 0px 10px #c3d2ff;
+  background-color:linear-gradient( rgba(32, 28, 28, 0.8), rgba(53, 49, 49, 0.6), rgba(32, 28, 28, 0.8) );;
+  border: 3px solid rgb(0,0,0,0.1);
+  
+} 
+.card-img {
+  max-width: 67%;
+  border-radius : 1rem ;
+  margin-left : 2rem ;
+  margin-right : 0.5rem ;
+  margin-top : 0.5rem ;
+   background-color:linear-gradient( rgba(32, 28, 28, 0.8), rgba(53, 49, 49, 0.6), rgba(32, 28, 28, 0.8) );
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+margin-left: 1rem;
+   
+}
+.rating {
+  display: flex;
+  justify-content: space-around;
+  background-color :#E03546;
+  width : 4rem ;
+  height : 1.5rem ;
+  border-radius : 0.2rem ;
+  color : white ;
+  margin-left : 1rem ;
+  line-height: 1.2rem;
+}
+
+.btn {
+    display: flex;
+  justify-content: center ;
+    margin-top : 0.7rem ;
+  height : 2.5rem ;
+  border-radius : 0.5rem ;
+  background-color: #4F46E5;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 0.1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.btn1 {
+margin-top: 0.5rem;
+   color: whitesmoke;
+  text-decoration: none;
+  padding: 0.1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+ .card-container {
+    display : flex ;
+   justify-content: space-evenly ;
+    flex-wrap : wrap ;
+     
+  }
+  .hotel-card {
+    display: flex;
+    justify-content: space-around;
+ flex-wrap: wrap;
+        background-color: #edeff1;
+        width: 100%;
+        max-width: 100%;
+  
+  }
+  .cards {
+   display: flex;
+    justify-content:space-evenly ;
+    flex-direction: column;
+     width: 100%;
+     max-width: 20rem;
+    border-radius: 10px;
+    max-height : 28rem ;
+    background-color:linear-gradient( rgba(32, 28, 28, 0.8), rgba(53, 49, 49, 0.6), rgba(32, 28, 28, 0.8) );;
+    border: 3px solid rgb(0,0,0,0.1);
+    position: relative;
+    margin-top : 0rem ;
+  } 
+  .card-img {
+    max-width: 64%;
+  max-height: 13rem;
+    border-radius : rem ;
+    margin-left : 3.5rem ;
+    margin-right : 0.5rem ;
+    margin-top : 3.5rem ;
+     background-color:linear-gradient( rgba(32, 28, 28, 0.8), rgba(53, 49, 49, 0.6), rgba(32, 28, 28, 0.8) );
+  }
+ 
+  .like-badge {
+    position: absolute ;
+    right: 5%;
+    color:white;
+    bottom: 89%;
+color :red ;
+cursor: pointer;
+     width: 2.8rem;
+   } 
+   .dislike-badge {
+    position: absolute ;
+    right: 5%;
+    color:white;
+    bottom: 89%;
+color :grey ;
+cursor: pointer;
+     width: 2.8rem;
+   } 
+   .remove-badge {
+    position: absolute ;
+    right: -2%;
+    color:white;
+    bottom: 89%;
+     width: 2.8rem;
+     cursor: pointer;
+   } 
+  
+  @media (max-width :331px){
+    .badge{
+      position: absolute;
+      right: 3%;
+      color:white;
+      bottom: 62%;
+      font-size : 1.3rem ;
+    }
+    }
+  
+  .card-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info {
+  margin-left: 1rem;
+     
+  }
+  .rating {
+    display: flex;
+    justify-content: space-around;
+    background-color :#E03546;
+    width : 4rem ;
+    height : 1.5rem ;
+    border-radius : 0.2rem ;
+    color : white ;
+    margin-left : 1rem ;
+  }
+
+  .card-btn {
+      display: flex;
+    justify-content: center ;
+      margin-top : 0.7rem ;
+    height : 2.5rem ;
+    border-radius : 0.5rem ;
+    background-color: #4F46E5;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .btn1 {
+  margin-top: 0.5rem;
+     color: whitesmoke;
+    text-decoration: none;
+    padding: 0.1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media(max-width: 944px){
+    
+    .sidebarIconToggle {
+      height: 22px;
+      display:visible;
+        width: 22px;
+        position: fixed;
+        z-index: 99;
+        top: 22px;
+        left: 15px;
+        transition: all 0.3s;
+        cursor: pointer; 
+        color: black;
+      }
+    .card-container {
+      display : flex ;
+     justify-content: space-evenly ;
+      flex-wrap : wrap ;
+      margin-left: auto;
+       
+    }
+    .cards{
+      max-width: 17rem;
+    }
+    #sidebarMenu {
+      height: 45rem;
+      position: fixed;
+      left: 0;
+      top: 2;
+      width: 260px;
+     transform: translateX(-250px);
+      transition: transform 250ms ease-in-out;
+    line-height: 1.4rem;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0px 0px 10px #c3d2ff;
+    }
+}
+.clear-btn{
+  color:#2874f0;
+  padding :0.3rem;
+  cursor: pointer;
+}
+@media(max-width: 600px){
+    
+
+  .card-container {
+    display : flex ;
+   justify-content: space-evenly ;
+    flex-wrap : wrap ;
+    margin-left: auto;
+     
+  }
+  .cards{
+    max-width: 14rem;
+  }
+}

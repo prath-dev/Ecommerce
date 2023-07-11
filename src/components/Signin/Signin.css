@@ -1,0 +1,56 @@
+.form-container {
+    display: flex;
+   justify-content: center;
+ }
+ .form-card {    background-color:  #fff;
+     border-radius: 0.4rem;
+     box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+  width: 100%;
+    max-width: 25rem;
+   height : 28rem ;
+        gap : 1rem ;
+   border: 2px solid grey;
+   line-height: 1.7rem;
+ }
+ h3 {
+   color : #4F46E5;
+   margin-left: 1rem;
+ }
+ .form-input {
+   padding : 0.5rem ;
+   margin-left: 1rem;
+    width: 80%;
+   border: 2px solid grey;
+   margin-bottom: 2rem;
+ }
+ .checkbox {
+     margin-left: 1rem;
+    margin-top: 1rem;
+ }
+ 
+ .form-btn {
+     display: flex;
+   justify-content: center ;
+     margin-top : 0.7rem ;
+   height : 2.5rem ;
+   border-radius : 0.3rem ;
+   background-color: #4F46E5;
+   color: whitesmoke;
+   text-decoration: none;
+   padding: 0.1rem;
+   margin-right: 1rem;
+   margin-left: 1rem;
+   margin-bottom: 1rem;
+ }
+ .btn1 {
+ margin-top: 0.5rem;
+    color: whitesmoke;
+   text-decoration: none;
+   padding: 0.1rem;
+   margin-right: 0rem;
+   margin-left: 0rem;
+   margin-bottom: 1rem;
+ }
+ .login {
+   margin-left : 22% ;
+ }

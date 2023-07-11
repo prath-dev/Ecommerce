@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  .pricecard-container {
+display: block;
+    justify-content : cernter ;
+    position: sticky;
+   
+  }
+
+  .order-text {
+    margin-bottom: 1rem;
+    color: black;
+  }
+  .header-textcard {
+    font-size: 1.2rem ;
+    margin-left : 0.5rem ;
+    border-bottom: 2px solid #F0F0F0;;
+  }
+  .price-container {
+    width: 100%;
+    max-width: 22rem;
+    border: 2px solid gray;
+    height: 15rem;
+    margin-top: 6rem;
+    
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+    margin-left : 0.5rem ;
+      margin-right : 0.5rem ;
+  line-height : 2rem ;
+  }
+  p{
+      margin-left : 0.5rem ;
+  }
+  .place-order-btn {
+    display: flex;
+    justify-content: center;
+    height : 3rem ;
+    margin-bottom: 1%;
+   
+  }
+  .place-order-btn button {
+    color : white ;
+    background: #1D4ED8;
+    border : 2px solid #1D4ED8 ;
+    width : 94% ;
+    border-radius: 0.4rem;
+    height: 3rem;
+  }
+  .total-amt {
+    border-top: 2px solid gray;
+      border-bottom: 2px solid gray;
+    font-size : 1.3rem ;
+  }
+  
