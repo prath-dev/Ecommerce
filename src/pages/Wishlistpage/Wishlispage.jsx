@@ -13,7 +13,7 @@ const Wishlispage = () => {
   
       {myWishlist.length === 0 ? (
         <div className="empty-cart">
-        <h1>Empty Cart</h1>
+        <h1>Empty WishList</h1>
         </div>
       ) : (
         <>
